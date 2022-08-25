@@ -654,7 +654,7 @@ nav ul a span {
   font-size: 14px;
   line-height: 1.5;
   /* background-color: #fdd370; */
-  background-color: white;
+  background-color: transparent;
   color: #333333;
   cursor: pointer;
   padding-left: 16px;
@@ -677,4 +677,8 @@ nav ul a span {
 .info-grid {
   display: flex;
   align-items: center;
+}
+
+.todo-hover:hover {
+  background-color: rgb(222, 220, 220);
 }

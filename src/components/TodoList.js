@@ -168,7 +168,7 @@ const ToDoListItems = function ({ todos, setTodos, filter }) {
         <div className="todoList_items">
             <ul className="todoList_item">
                 {rows.map((item) => {
-                    return <li key={item.id}><ToDoListItem todo={item} toggleDone={toggleDone} deleteTodo={deleteTodo} /></li>
+                    return <li key={item.id} className="todo-hover"><ToDoListItem todo={item} toggleDone={toggleDone} deleteTodo={deleteTodo} /></li>
                 })}
             </ul>
             <ToDoListStatistics filter={filter} todos={todos} cleanDone={cleanDone} />
