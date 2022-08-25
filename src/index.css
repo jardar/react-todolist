@@ -478,8 +478,8 @@ nav ul a span {
   padding-left: 16px;
 }
 
-.inputBox a {
-  display: block;
+.inputBox button {
+  /* display: block; */
   width: 40px;
   height: 39px;
   position: absolute;
@@ -492,6 +492,8 @@ nav ul a span {
   top: 4px;
   right: 4px;
   padding: 10px;
+  padding-top: 8px;
+
 }
 
 .todoList_list {
@@ -514,14 +516,18 @@ nav ul a span {
   width: 100%;
 }
 
-.todoList_list .todoList_tab a {
-  display: block;
+.todoList_list .todoList_tab button {
+  /* display: block; */
+  width: 100%;
+  border: none;
   color: #9F9A91;
-  text-decoration: none;
+  background-color: #fff;
+  /* text-decoration: none; */
   line-height: 20px;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   padding: 16px;
+  padding-bottom: 4px;
   border-bottom: 2px solid #efefef;
 }
 
@@ -612,4 +618,63 @@ nav ul a span {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=all.css.map */
+.empty_items {
+  text-align: center;
+}
+
+.todoList_empty_items {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px 24px;
+
+}
+
+.todoList_empty_items+img {
+  width: 240px;
+
+}
+
+.form-errmsg {
+  color: red;
+  font-size: 12px;
+}
+
+.btn-logout {
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fdd370;
+  color: #333333;
+  cursor: pointer;
+}
+
+.btn-link {
+  border: none;
+  font-size: 14px;
+  line-height: 1.5;
+  /* background-color: #fdd370; */
+  background-color: white;
+  color: #333333;
+  cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-link:hover {
+  color: red;
+}
+
+.todoList_delbtn {
+  opacity: 0.1;
+}
+
+.todoList_delbtn:hover {
+  opacity: 1;
+  color: red;
+}
+
+.info-grid {
+  display: flex;
+  align-items: center;
+}

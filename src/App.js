@@ -4,14 +4,12 @@ import { Routes, Route } from 'react-router-dom';
 import { AuthProvider, RequireAuth } from './components/AuthProvider'
 import Login from './components/Login';
 import Regist from './components/Regist';
-import TodoList from './components/TodoList';
+import TodoListPage from './components/TodoList';
 
 function App() {
 
   return (
     <AuthProvider>
-
-      <h1>Auth Example123</h1>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="reg" element={<Regist />} />
@@ -19,7 +17,7 @@ function App() {
           path="/todolist"
           element={
             <RequireAuth>
-              <TodoList />
+              <TodoListPage />
             </RequireAuth>
           }
         />
